@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<style>
+*{
+padding:0;
+margin:0;
+
+font-size:25px;
+}
+
+body{
+display:flex;
+
+flex-direction:column;
+justify-content:center;
+align-items: center;
+}
+.from{
+ box-shadow:1px 0px 20px 0px #888888;
+margin-top: 30px;
+background: #f1f1f1;
+display:flex;
+flex-direction:column;
+padding:30px;
+border-radius:10px;
+}
+span{
+margin-top:20px}
+
+
+input{
+border-radius:5px;
+padding:5px 10px;
+margin-top:10px;
+border:0;
+box-shadow: 2px -1px 12px 0px #888888;
+}
+input:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 2px #5a01a7;
+}
+.btn{
+margin-top:25px;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
+
+.btn:hover {
+      background-color:#002ead;
+      transition: 0.7s;
+  }
+</style>
+</head>
+<body>
+
+
+	<form class="from"action="adduser.jsp" method="post">
+	
+
+
+		<span>Name:</span><input type="text" name="name" placeholder="Enter your name"/>
+		
+	<span>Email:</span><input type="email" name="email" placeholder="Enter your email"/>
+		
+		 
+ <span> Password:</span>
+   <input type="password" name="password" placeholder="Enter your password"/>
+
+		<input class="btn"type="submit" value="Add User"/>
+	
+	</form>
+</body>
+</html>
